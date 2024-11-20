@@ -20,7 +20,7 @@ List of criteria:
 </br>
 Any criteria may be omitted.
 </br>
-Order of criteria is irrelevant.
+Order of criteria in the request is irrelevant.
 </br>
 Criteria location_name, category, city are using LIKE to match specified pattern in a column. 
 
@@ -163,7 +163,6 @@ Data is returned in the valid GeoJSON format compressed by SQL Server.
 ```
 {'type': 'FeatureCollection', 'features': []}
 ```
-
 Stored procedure expects validated JSON incoming request.
 </br>
 However blocks that parse json request data and retrieve data from the tables are wrapped inside Try/Catch.
