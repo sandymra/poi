@@ -7,6 +7,7 @@ Implementation of stored procedure to find POIs based on search criteria using g
 Search criteria is passed to the stored procedure in JSON format as one input parameter.
 </br>
 List of criteria:
+</br>
 1. country_code 
 2. region
 3. city
@@ -16,8 +17,7 @@ List of criteria:
 7. polygon_wkt
 8. category
 9. location_name
- 
- </br>
+</br>
 Any criteria may be omitted.
 </br>
 Order of criteria is irrelevant.
@@ -57,8 +57,7 @@ Criteria location_name, category, city are using LIKE to match specified pattern
 ```
 
 If no search criteria is submitted all POIs within 200 meters of the current location will be returned using dummy location as the current one.
-
-</br></br>
+</br>
 Dummy location:
 </br>
 Latitude: 33.480639
@@ -205,7 +204,7 @@ SELECT	@GeoJsonResponse as N'@GeoJsonResponse'
 
 ### Database backup
 
-Full database backup with schema and data in the repository
+Full database backup with schema and data is in the repository
 </br>
 POI_20241120.zip
 
